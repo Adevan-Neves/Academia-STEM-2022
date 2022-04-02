@@ -5,3 +5,24 @@
 3. O Sistema deverá fazer uso de modularização e manipulação de arquivos.
 
 ### Caso consiga todo o sistema poder ser com Interface gráfica, caso contrário só a tela principal (menu)
+
+## Solução :
+
+### Cadastrando o cliente na base de dados (database.json)
+![Alter text](./img/sistema-cadastro.png)
+
+### Listando os clientes já cadastrados
+
+![Alter text](./img/sistema-listar.png)
+
+### Tratando o caso da idade não ser um inteiro
+
+![Alter text](./img/sistema-cadastro-idade-incorreta.png)
+
+### Como interagir com o "sistema" ?
+
+```bash
+python3 ui.py
+```
+
+## Obrigado [Academia STEM](https://stem.uea.edu.br/) !

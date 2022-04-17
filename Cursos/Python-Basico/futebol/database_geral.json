@@ -1,0 +1,76 @@
+[
+    {
+        "Liga dos campeoes": {
+            "inicio": 15,
+            "times": [
+                {
+                    "Juventus": {
+                        "estrelas": 3,
+                        "pontos": 3,
+                        "n_jogadores": 4
+                    }
+                },
+                {
+                    "Fortaleza": {
+                        "estrelas": 2,
+                        "pontos": 3,
+                        "n_jogadores": 18
+                    }
+                }
+            ],
+            "resultados": [
+                "Juventus 3 x 2 Fortaleza ",
+                "Fortaleza 2 x 1 Juventus "
+            ]
+        }
+    },
+    {
+        "Libertadores": {
+            "inicio": 19,
+            "times": [
+                {
+                    "Corinthias": {
+                        "estrelas": 1,
+                        "pontos": 5,
+                        "n_jogadores": 9
+                    }
+                },
+                {
+                    "Salvador": {
+                        "estrelas": 3,
+                        "pontos": 12,
+                        "n_jogadores": 1
+                    }
+                },
+                {
+                    "Manaus": {
+                        "estrelas": 1,
+                        "pontos": 3,
+                        "n_jogadores": 4
+                    }
+                },
+                {
+                    "Vasco": {
+                        "estrelas": 5,
+                        "pontos": 13,
+                        "n_jogadores": 23
+                    }
+                }
+            ],
+            "resultados": [
+                "Corinthias 1 x 3 Salvador ",
+                "Corinthias 0 x 0 Manaus ",
+                "Corinthias 0 x 4 Vasco ",
+                "Salvador 2 x 0 Corinthias ",
+                "Salvador 1 x 0 Manaus ",
+                "Salvador 3 x 4 Vasco ",
+                "Manaus 0 x 0 Corinthias ",
+                "Manaus 0 x 3 Salvador ",
+                "Manaus 1 x 1 Vasco ",
+                "Vasco 0 x 1 Corinthias ",
+                "Vasco 3 x 2 Salvador ",
+                "Vasco 4 x 1 Manaus "
+            ]
+        }
+    }
+]

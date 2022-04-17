@@ -25,9 +25,9 @@ def cadastrar_campeonato(nome,data_inicio):
     di.append(campeonato)
     salvar_dados(di)
 
-def cadastrar_time(nome_campeonato,nome_time,estrelas=1,pontos=0):
+def cadastrar_time(nome_campeonato,nome_time,n_jogadores=11,estrelas=1,pontos=0):
     time={}
-    time[f'{nome_time}']={'estrelas':estrelas,'pontos':pontos}
+    time[f'{nome_time}']={'estrelas':estrelas,'pontos':pontos,'n_jogadores':n_jogadores}
     di=recuperar_dados()
     for campeonato in di:
         if nome_campeonato in campeonato:
@@ -102,8 +102,9 @@ def listar_time(nome_campeonato):
 
 def listar_campeonato(nome_campeonato):
     di=recuperar_dados()
-    al=di[nome_campeonato]
-    return al
+    for campeonato in di:
+        if nome_campeonato in campeonato:
+            return campeonato
 
 def fazer_gols(time):
     l=time[list(time.keys())[0]]['estrelas']

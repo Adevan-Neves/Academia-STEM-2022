@@ -48,26 +48,29 @@ class Adm:
             print("")
 
     def lista_partidas(self,nome_campeonato):
+        self.recupera_dados()[f'{nome_campeonato}'].simular_partida()
         return self.recupera_dados()[f'{nome_campeonato}'].get_partidas()
     
     def mostrar_times(self,nome_campeonato):
         return self.recupera_dados()[f'{nome_campeonato}'].get_times()
 
     def mostrar_resultados(self,nome_campeonato):
+        self.recupera_dados()[f'{nome_campeonato}'].simular_partida()
         return self.recupera_dados()[f'{nome_campeonato}'].get_resultados()
     
     def mostrar_vencedor(self,nome_campeonato):
+        self.recupera_dados()[f'{nome_campeonato}'].simular_partida()
         return self.recupera_dados()[f'{nome_campeonato}'].vencedor
 
     def cadastrar_times(self,nome_campeonato,time):
-        if(date.today()<self.recupera_dados()[f'{nome_campeonato}'].data_inicio):
-            # Representa a regra de negócio que um time não pode se inscrever
-            # em um campeonato que já começou
-            novo=self.recupera_dados()[f'{nome_campeonato}'].add_time(time)
-            self.salva_dados(novo)
+        
+        # Representa a regra de negócio que um time não pode se inscrever
+        # em um campeonato que já começou
+        novo=self.recupera_dados()[f'{nome_campeonato}'].add_time(time)
+        self.salva_dados(novo)
     
     def get_campeonato(self,nome_campeonato):
-        return self.recupera_dados[f'{nome_campeonato}']
+        return self.recupera_dados()[f'{nome_campeonato}']
 
 
 class Campeonato:

@@ -91,7 +91,7 @@ def simular_campeonato(nome_campeonato):
 
                             
                             campeonato[list(campeonato.keys())[0]]['resultados'].append(f'{list(time_atual.keys())[0]} {gols_time_atual} x {gols_time_adv} {list(time_adv.keys())[0]} {randint(1,30)}/{randint(1,3)}/2022')
-        salvar_dados(di)
+                salvar_dados(di)
 
                             
 def listar_time(nome_campeonato):

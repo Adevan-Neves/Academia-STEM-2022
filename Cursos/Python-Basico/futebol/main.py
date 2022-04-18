@@ -1,12 +1,12 @@
 from futebol import *
 
-cadastrar_campeonato("Liga dos campeoes",15)
+cadastrar_campeonato("Liga dos campeoes",[15,20,20])
 
 cadastrar_time("Liga dos campeoes","Juventus",4,3)
 cadastrar_time("Liga dos campeoes","Fortaleza",18,2)
 
 
-cadastrar_campeonato("Libertadores",19)
+cadastrar_campeonato("Libertadores",[15,20,20])
 
 
 cadastrar_time("Libertadores","Corinthias",9,1)

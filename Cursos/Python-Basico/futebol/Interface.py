@@ -1,7 +1,7 @@
 import tkinter as ttk
 from tkinter import *
 from tkinter import messagebox
-from futebol import cadastrar_campeonato
+from futebol import cadastrar_campeonato, cadastrar_time
 
     
 def cadastrarCampeonato():
@@ -32,12 +32,12 @@ def cadastrarCampeonato():
     ano=Entry(root,width=50)
     ano.place(x=450,y=250)
 
-    
+    cad = lambda  : cadastrar_campeonato(e1.get(),[int(dia.get()),int(mes.get()),int(ano.get())])
 
     botao1=ttk.Button(root, text='Menu Principal',command=root.destroy)
-    botao1.place(x=300,y=300,width=180,height=25)
+    botao1.place(x=300,y=350,width=180,height=25)
 
-    botao2=ttk.Button(root, text='Cadastrar',command=cadastrar_campeonato(e1.get(),[dia.get(),mes.get(),ano.get()]))
+    botao2=ttk.Button(root, text='Cadastrar',command=cad)
     botao2.place(x=300,y=300,width=180,height=25)
 
 
@@ -72,11 +72,13 @@ def cadastrarTime():
     e4=Entry(root,width=50)
     e4.place(x=450,y=250)
 
+    cad = lambda : cadastrar_time(e2.get(),e1.get(),int(e4.get()),int(e3.get()))
+
     botao1=ttk.Button(root, text='Menu Principal',command=root.destroy)
     botao1.place(x=300,y=320,width=180,height=25)
 
-    if(e4<=11):
-        messagebox.messagebox.showinfo("Erro de configuração","O número de jogadores deve ser maior que 11")
+    botao2=ttk.Button(root, text='Cadastrar',command=cad)
+    botao2.place(x=300,y=320,width=180,height=25)
     
     
     root.mainloop()
@@ -126,5 +128,5 @@ def menuPrincipal():
 
 
 
-
+menuPrincipal()
 

@@ -188,9 +188,7 @@ def cadastrarTime():
     botao1=ttk.Button(root, text='Menu Principal',command=root.destroy)
     botao1.place(x=300,y=320,width=180,height=25)
 
-    if(e4.get()<=11):
-        messagebox.messagebox.showinfo("Erro de configuração","O número de jogadores deve ser maior que 11")
-    
+        
     
     root.mainloop()
 

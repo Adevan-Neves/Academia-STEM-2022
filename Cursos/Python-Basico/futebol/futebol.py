@@ -1,7 +1,8 @@
 import os
 import json
 from random import randint
-from Interface import menuPrincipal
+from time import time
+
 
 DATABASE_GERAL="database_geral.json"
 
@@ -41,6 +42,15 @@ def mostrar_resultado(nome_campeonato):
     for campeonato in di:
         if nome_campeonato in campeonato:
             return campeonato[nome_campeonato]['resultados']
+
+def mostrar_resultado_time(nome_campeonato,nome_time):
+    lista_resultado=mostrar_resultado(nome_campeonato)
+    resultados_time=[]
+    for resultado in lista_resultado:
+        if(nome_time in resultado):
+            resultados_time.append(time)
+    
+    return resultados_time
 
 def mostrar_vencedor(nome_campeonato):
     di=recuperar_dados()
@@ -90,7 +100,7 @@ def simular_campeonato(nome_campeonato):
                                 time_adv[list(time_adv.keys())[0]]['pontos']+=1
 
                             
-                            campeonato[list(campeonato.keys())[0]]['resultados'].append(f'{list(time_atual.keys())[0]} {gols_time_atual} x {gols_time_adv} {list(time_adv.keys())[0]} {randint(1,30)}/{randint(1,3)}/2022')
+                            campeonato[list(campeonato.keys())[0]]['resultados'].append(f'{list(time_atual.keys())[0]} {gols_time_atual} x {gols_time_adv} {list(time_adv.keys())[0]}')
                 salvar_dados(di)
 
                             
@@ -110,4 +120,3 @@ def fazer_gols(time):
     l=time[list(time.keys())[0]]['estrelas']
     return randint(0,l)
 
-menuPrincipal()

@@ -1,7 +1,7 @@
 import os
 import json
-from datetime import date
 from random import randint
+from Interface import menuPrincipal
 
 DATABASE_GERAL="database_geral.json"
 
@@ -109,3 +109,5 @@ def listar_campeonato(nome_campeonato):
 def fazer_gols(time):
     l=time[list(time.keys())[0]]['estrelas']
     return randint(0,l)
+
+menuPrincipal()

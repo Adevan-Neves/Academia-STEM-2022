@@ -1,0 +1,35 @@
+[
+    {
+        "Brasileirao": {
+            "inicio": [
+                13,
+                24,
+                2002
+            ],
+            "times": [],
+            "resultados": []
+        }
+    },
+    {
+        "Liga dos Campeoes": {
+            "inicio": [
+                12,
+                24,
+                2003
+            ],
+            "times": [],
+            "resultados": []
+        }
+    },
+    {
+        "Madrid": {
+            "inicio": [
+                29,
+                19,
+                2018
+            ],
+            "times": [],
+            "resultados": []
+        }
+    }
+]

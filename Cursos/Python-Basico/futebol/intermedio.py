@@ -145,12 +145,12 @@ def cadastrarCampeonato():
     ano=Entry(root,width=50)
     ano.place(x=450,y=250)
 
-    
+    cad = lambda  : cadastrar_campeonato(e1.get(),[int(dia.get()),int(mes.get()),int(ano.get())])
 
     botao1=ttk.Button(root, text='Menu Principal',command=root.destroy)
     botao1.place(x=300,y=300,width=180,height=25)
 
-    botao2=ttk.Button(root, text='Cadastrar',command=cadastrar_campeonato(e1.get(),[int(dia.get()),int(mes.get()),int(ano.get())]))
+    botao2=ttk.Button(root, text='Cadastrar',command=cad)
     botao2.place(x=300,y=340,width=180,height=25)
 
 
@@ -188,7 +188,7 @@ def cadastrarTime():
     botao1=ttk.Button(root, text='Menu Principal',command=root.destroy)
     botao1.place(x=300,y=320,width=180,height=25)
 
-    if(e4.getint()<=11):
+    if(e4.get()<=11):
         messagebox.messagebox.showinfo("Erro de configuração","O número de jogadores deve ser maior que 11")
     
     

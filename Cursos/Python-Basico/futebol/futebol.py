@@ -120,3 +120,11 @@ def fazer_gols(time):
     l=time[list(time.keys())[0]]['estrelas']
     return randint(0,l)
 
+def recupera_times_tabela(nome_campeonato):
+    times=listar_time(nome_campeonato)
+    tabela=[]
+    for time in times:
+        for k,v in time.items():
+            tp=(k,v["pontos"])
+            tabela.append(tp)
+    return sorted(tabela,key=lambda item : item[1],reverse=True)

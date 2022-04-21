@@ -6,7 +6,7 @@
 
 ## Ideia Inicial
 
-#### -  Entrada : cadastrar campeonato, cadastrar agenda(horários disponíveis).
+#### -  Entrada : cadastrar campeonato.
 
 #### -  Processamento: agendar jogos, simular jogos, adicionar time a campeonato, adicionar jogadores a times. 
 

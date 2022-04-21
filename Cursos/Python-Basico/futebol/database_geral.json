@@ -1,65 +1,84 @@
 [
     {
-        "Brasileirao": {
+        "Liga dos campeoes": {
             "inicio": [
-                13,
-                24,
-                2002
-            ],
-            "times": [],
-            "resultados": []
-        }
-    },
-    {
-        "Liga dos Campeoes": {
-            "inicio": [
-                12,
-                24,
-                2003
-            ],
-            "times": [],
-            "resultados": []
-        }
-    },
-    {
-        "Madrid": {
-            "inicio": [
-                29,
-                19,
-                2018
-            ],
-            "times": [],
-            "resultados": []
-        }
-    },
-    {
-        "Br": {
-            "inicio": [
-                24,
-                11,
-                2005
+                15,
+                20,
+                20
             ],
             "times": [
                 {
-                    "Flamengo": {
-                        "estrelas": 5,
+                    "Juventus": {
+                        "estrelas": 3,
+                        "pontos": 6,
+                        "n_jogadores": 4
+                    }
+                },
+                {
+                    "Fortaleza": {
+                        "estrelas": 2,
                         "pontos": 0,
-                        "n_jogadores": 9
+                        "n_jogadores": 18
                     }
                 }
             ],
-            "resultados": []
+            "resultados": [
+                "Juventus 3 x 1 Fortaleza",
+                "Fortaleza 0 x 3 Juventus"
+            ]
         }
     },
     {
-        "Brasil": {
+        "Libertadores": {
             "inicio": [
-                24,
-                1,
-                2009
+                15,
+                20,
+                20
             ],
-            "times": [],
-            "resultados": []
+            "times": [
+                {
+                    "Corinthias": {
+                        "estrelas": 1,
+                        "pontos": 1,
+                        "n_jogadores": 9
+                    }
+                },
+                {
+                    "Salvador": {
+                        "estrelas": 3,
+                        "pontos": 11,
+                        "n_jogadores": 1
+                    }
+                },
+                {
+                    "Manaus": {
+                        "estrelas": 1,
+                        "pontos": 6,
+                        "n_jogadores": 4
+                    }
+                },
+                {
+                    "Vasco": {
+                        "estrelas": 5,
+                        "pontos": 14,
+                        "n_jogadores": 23
+                    }
+                }
+            ],
+            "resultados": [
+                "Corinthias 0 x 2 Salvador",
+                "Corinthias 1 x 1 Manaus",
+                "Corinthias 0 x 4 Vasco",
+                "Salvador 1 x 0 Corinthias",
+                "Salvador 1 x 1 Manaus",
+                "Salvador 1 x 1 Vasco",
+                "Manaus 1 x 0 Corinthias",
+                "Manaus 1 x 3 Salvador",
+                "Manaus 1 x 1 Vasco",
+                "Vasco 2 x 1 Corinthias",
+                "Vasco 4 x 0 Salvador",
+                "Vasco 1 x 0 Manaus"
+            ]
         }
     }
 ]

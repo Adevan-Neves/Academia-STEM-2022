@@ -11,20 +11,22 @@
                     "Juventus": {
                         "estrelas": 3,
                         "pontos": 6,
-                        "n_jogadores": 4
+                        "n_jogadores": 4,
+                        "gols_marcados": 4
                     }
                 },
                 {
                     "Fortaleza": {
                         "estrelas": 2,
                         "pontos": 0,
-                        "n_jogadores": 18
+                        "n_jogadores": 18,
+                        "gols_marcados": 2
                     }
                 }
             ],
             "resultados": [
-                "Juventus 3 x 1 Fortaleza",
-                "Fortaleza 0 x 3 Juventus"
+                "Juventus 3 x 2 Fortaleza",
+                "Fortaleza 0 x 1 Juventus"
             ]
         }
     },
@@ -40,44 +42,48 @@
                     "Corinthias": {
                         "estrelas": 1,
                         "pontos": 1,
-                        "n_jogadores": 9
+                        "n_jogadores": 9,
+                        "gols_marcados": 2
                     }
                 },
                 {
                     "Salvador": {
                         "estrelas": 3,
-                        "pontos": 11,
-                        "n_jogadores": 1
+                        "pontos": 8,
+                        "n_jogadores": 1,
+                        "gols_marcados": 5
                     }
                 },
                 {
                     "Manaus": {
                         "estrelas": 1,
-                        "pontos": 6,
-                        "n_jogadores": 4
+                        "pontos": 8,
+                        "n_jogadores": 4,
+                        "gols_marcados": 3
                     }
                 },
                 {
                     "Vasco": {
                         "estrelas": 5,
-                        "pontos": 14,
-                        "n_jogadores": 23
+                        "pontos": 16,
+                        "n_jogadores": 23,
+                        "gols_marcados": 20
                     }
                 }
             ],
             "resultados": [
-                "Corinthias 0 x 2 Salvador",
-                "Corinthias 1 x 1 Manaus",
+                "Corinthias 1 x 3 Salvador",
+                "Corinthias 0 x 1 Manaus",
                 "Corinthias 0 x 4 Vasco",
-                "Salvador 1 x 0 Corinthias",
-                "Salvador 1 x 1 Manaus",
-                "Salvador 1 x 1 Vasco",
-                "Manaus 1 x 0 Corinthias",
-                "Manaus 1 x 3 Salvador",
-                "Manaus 1 x 1 Vasco",
-                "Vasco 2 x 1 Corinthias",
-                "Vasco 4 x 0 Salvador",
-                "Vasco 1 x 0 Manaus"
+                "Salvador 2 x 0 Corinthias",
+                "Salvador 0 x 0 Manaus",
+                "Salvador 0 x 2 Vasco",
+                "Manaus 0 x 0 Corinthias",
+                "Manaus 1 x 0 Salvador",
+                "Manaus 0 x 5 Vasco",
+                "Vasco 4 x 1 Corinthias",
+                "Vasco 0 x 0 Salvador",
+                "Vasco 5 x 1 Manaus"
             ]
         }
     }

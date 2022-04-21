@@ -18,14 +18,15 @@ cadastrar_time("Libertadores","Vasco",23,5)
 simular_campeonato("Liga dos campeoes")
 simular_campeonato("Libertadores")
 
-print(mostrar_resultado("Liga dos campeoes"))
+#print(mostrar_resultado("Liga dos campeoes"))
 print(mostrar_resultado("Libertadores"))
 
-print(mostrar_vencedor("Liga dos campeoes"))
+#print(mostrar_vencedor("Liga dos campeoes"))
 print(mostrar_vencedor("Libertadores"))
+print(mostrar_vencedor("Liga dos campeoes"))
 
-print(listar_time("Liga dos campeoes"))
-print(listar_time("Libertadores"))
+#print(listar_time("Liga dos campeoes"))
+#print(listar_time("Libertadores"))
 
-print(listar_campeonato("Liga dos campeoes"))
-print(listar_campeonato("Libertadores"))
+#print(listar_campeonato("Liga dos campeoes"))
+#print(listar_campeonato("Libertadores"))

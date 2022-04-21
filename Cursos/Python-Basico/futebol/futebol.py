@@ -26,9 +26,9 @@ def cadastrar_campeonato(nome,data_inicio):
     di.append(campeonato)
     salvar_dados(di)
 
-def cadastrar_time(nome_campeonato,nome_time,n_jogadores=11,estrelas=1,pontos=0):
+def cadastrar_time(nome_campeonato,nome_time,n_jogadores=11,estrelas=1,pontos=0,gols_marcados=0):
     time={}
-    time[f'{nome_time}']={'estrelas':estrelas,'pontos':pontos,'n_jogadores':n_jogadores}
+    time[f'{nome_time}']={'estrelas':estrelas,'pontos':pontos,'n_jogadores':n_jogadores,'gols_marcados':gols_marcados}
     di=recuperar_dados()
     for campeonato in di:
         if nome_campeonato in campeonato:
@@ -64,7 +64,7 @@ def mostrar_vencedor(nome_campeonato):
             
             vencedor=times[0]
             for i in range(1,n):
-                if times[i][list(times[i].keys())[0]]['pontos']>vencedor[list(vencedor.keys())[0]]['pontos']:
+                if (times[i][list(times[i].keys())[0]]['pontos']>vencedor[list(vencedor.keys())[0]]['pontos'] or times[i][list(times[i].keys())[0]]['gols_marcados']>vencedor[list(vencedor.keys())[0]]['gols_marcados']):
                     vencedor=times[i]
 
             return vencedor
@@ -84,6 +84,11 @@ def simular_campeonato(nome_campeonato):
                             
                             gols_time_atual=fazer_gols(time_atual)
                             gols_time_adv=fazer_gols(time_adv)
+
+                            #Adicionando os gols ao saldo de gols de cada time
+                            time_atual[list(time_atual.keys())[0]]['gols_marcados']+=gols_time_atual
+                            time_adv[list(time_adv.keys())[0]]['gols_marcados']+=gols_time_adv
+
                             if(gols_time_atual>gols_time_adv):
                                 
                                 time_atual[list(time_atual.keys())[0]]['pontos']+=3

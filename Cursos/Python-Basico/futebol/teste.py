@@ -1,3 +1,3 @@
 from futebol import *
 
-print(recupera_times_tabela("Libertadores"))
+print(mostrar_todos_campeonatos())

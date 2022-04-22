@@ -1,90 +1,138 @@
 [
     {
-        "Liga dos campeoes": {
+        "amador": {
             "inicio": [
-                15,
-                20,
-                20
+                24,
+                10,
+                2022
             ],
             "times": [
                 {
-                    "Juventus": {
-                        "estrelas": 3,
-                        "pontos": 6,
-                        "n_jogadores": 4,
-                        "gols_marcados": 4
+                    "BDX": {
+                        "estrelas": 5,
+                        "pontos": 0,
+                        "n_jogadores": 14,
+                        "gols_marcados": 0
                     }
                 },
                 {
-                    "Fortaleza": {
+                    "Nacional": {
+                        "estrelas": 4,
+                        "pontos": 0,
+                        "n_jogadores": 20,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "Iranduba": {
                         "estrelas": 2,
                         "pontos": 0,
                         "n_jogadores": 18,
-                        "gols_marcados": 2
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "Real Madrid": {
+                        "estrelas": 4,
+                        "pontos": 0,
+                        "n_jogadores": 21,
+                        "gols_marcados": 0
                     }
                 }
             ],
-            "resultados": [
-                "Juventus 3 x 2 Fortaleza",
-                "Fortaleza 0 x 1 Juventus"
-            ]
+            "resultados": []
         }
     },
     {
-        "Libertadores": {
+        "brasileirao": {
             "inicio": [
-                15,
-                20,
-                20
+                10,
+                2,
+                2022
             ],
             "times": [
                 {
-                    "Corinthias": {
-                        "estrelas": 1,
-                        "pontos": 1,
-                        "n_jogadores": 9,
-                        "gols_marcados": 2
+                    "fluminense": {
+                        "estrelas": 4,
+                        "pontos": 0,
+                        "n_jogadores": 22,
+                        "gols_marcados": 0
                     }
                 },
                 {
-                    "Salvador": {
-                        "estrelas": 3,
-                        "pontos": 8,
-                        "n_jogadores": 1,
-                        "gols_marcados": 5
-                    }
-                },
-                {
-                    "Manaus": {
-                        "estrelas": 1,
-                        "pontos": 8,
-                        "n_jogadores": 4,
-                        "gols_marcados": 3
-                    }
-                },
-                {
-                    "Vasco": {
+                    "flamengo": {
                         "estrelas": 5,
-                        "pontos": 16,
-                        "n_jogadores": 23,
-                        "gols_marcados": 20
+                        "pontos": 0,
+                        "n_jogadores": 25,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "palmeiras": {
+                        "estrelas": 5,
+                        "pontos": 0,
+                        "n_jogadores": 28,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "santos": {
+                        "estrelas": 3,
+                        "pontos": 0,
+                        "n_jogadores": 15,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "botafogo": {
+                        "estrelas": 3,
+                        "pontos": 0,
+                        "n_jogadores": 19,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "vasco": {
+                        "estrelas": 1,
+                        "pontos": 0,
+                        "n_jogadores": 12,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "atletico mineiro": {
+                        "estrelas": 5,
+                        "pontos": 0,
+                        "n_jogadores": 30,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "gremio": {
+                        "estrelas": 2,
+                        "pontos": 0,
+                        "n_jogadores": 15,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "america mineiro": {
+                        "estrelas": 2,
+                        "pontos": 0,
+                        "n_jogadores": 14,
+                        "gols_marcados": 0
+                    }
+                },
+                {
+                    "manaus": {
+                        "estrelas": 1,
+                        "pontos": 0,
+                        "n_jogadores": 12,
+                        "gols_marcados": 0
                     }
                 }
             ],
-            "resultados": [
-                "Corinthias 1 x 3 Salvador",
-                "Corinthias 0 x 1 Manaus",
-                "Corinthias 0 x 4 Vasco",
-                "Salvador 2 x 0 Corinthias",
-                "Salvador 0 x 0 Manaus",
-                "Salvador 0 x 2 Vasco",
-                "Manaus 0 x 0 Corinthias",
-                "Manaus 1 x 0 Salvador",
-                "Manaus 0 x 5 Vasco",
-                "Vasco 4 x 1 Corinthias",
-                "Vasco 0 x 0 Salvador",
-                "Vasco 5 x 1 Manaus"
-            ]
+            "resultados": []
         }
     }
 ]

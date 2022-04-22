@@ -41,14 +41,14 @@ def mostrar_resultado(nome_campeonato):
     di=recuperar_dados()
     for campeonato in di:
         if nome_campeonato in campeonato:
-            return campeonato[nome_campeonato]['resultados']
+            return (campeonato[nome_campeonato]['resultados'])
 
 def mostrar_resultado_time(nome_campeonato,nome_time):
     lista_resultado=mostrar_resultado(nome_campeonato)
     resultados_time=[]
     for resultado in lista_resultado:
         if(nome_time in resultado):
-            resultados_time.append(time)
+            resultados_time.append(resultado)
     
     return resultados_time
 
@@ -67,7 +67,7 @@ def mostrar_vencedor(nome_campeonato):
                 if (times[i][list(times[i].keys())[0]]['pontos']>vencedor[list(vencedor.keys())[0]]['pontos'] or times[i][list(times[i].keys())[0]]['gols_marcados']>vencedor[list(vencedor.keys())[0]]['gols_marcados']):
                     vencedor=times[i]
 
-            return vencedor
+            return str(list(vencedor.keys())[0])
 
 def simular_campeonato(nome_campeonato):
     di=recuperar_dados()
@@ -126,6 +126,8 @@ def fazer_gols(time):
     return randint(0,l)
 
 def recupera_times_tabela(nome_campeonato):
+    simular_campeonato(nome_campeonato)    
+
     times=listar_time(nome_campeonato)
     tabela=[]
     for time in times:
@@ -133,3 +135,13 @@ def recupera_times_tabela(nome_campeonato):
             tp=(k,v["pontos"])
             tabela.append(tp)
     return sorted(tabela,key=lambda item : item[1],reverse=True)
+
+def mostrar_todos_campeonatos():
+    di=recuperar_dados()
+    l=[]
+    for campeonato in di:
+        nome_campeonato=list(campeonato.keys())[0]
+        l.append(nome_campeonato)
+    return l
+
+

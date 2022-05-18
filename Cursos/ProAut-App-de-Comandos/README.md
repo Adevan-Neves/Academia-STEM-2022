@@ -1,0 +1,1 @@
+### Olá ! Seja bem vindo ao Projeto de Pesquisa e Desenvolvimento no AcadStem intitulado : Avaliação da aplicabilidade do ProAut por meio de um App para ensinarcrianças com TEA a obedecer a comandos simples e complexos.

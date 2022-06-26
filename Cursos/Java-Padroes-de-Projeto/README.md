@@ -12,9 +12,7 @@
 
 ## Implementação dos princípios para a construção de um modelo de restaurante com doces e salgados
 
-![Alter text](./projeto de programas.png)
-
-
+![Alter text](projeto%20de%20programas.png)
 
 
 

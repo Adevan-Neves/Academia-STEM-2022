@@ -6,9 +6,10 @@
 
 -  1 ) [Física](./Cursos/Fisica-Basica/README.md)
 -  2 ) [Python](./Cursos/Python-Basico/README.md)
--  3 ) [Matemática](./Cursos/Matematica-Basica/Atividade_Introducao_Integral.ipynb)
+-  3 ) [Matemática](./Cursos/Matematica-Basica/README.md)
 -  4 ) [Algoritmo e Estrutura de Dados](./Cursos/Algoritmo-e-Estrutura-de-Dados/README.md)
 -  5 ) [Cálculo para Computação](./Cursos/Calculo-para-Computacao/README.md)
 -  6 ) [Projeto de Programas - Padrões de Projeto](./Cursos/Java-Padroes-de-Projeto/README.md)
+-  7 ) [Arduíno - LAB na Digital Innovation One](./Cursos/Arduino-Projeto-DIO/README.md)
 -  7 ) [Artigos](./Cursos/Artigos/)
 -  8 ) [Certificações](./Cursos/Certificados/)

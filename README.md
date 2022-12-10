@@ -9,9 +9,10 @@
 -  3 ) [Matemática](./Cursos/Matematica-Basica/README.md)
 -  4 ) [Algoritmo e Estrutura de Dados](./Cursos/Algoritmo-e-Estrutura-de-Dados/README.md)
 -  5 ) [Cálculo para Computação](./Cursos/Calculo-para-Computacao/README.md)
--  6 ) [Projeto de Programas - Padrões de Projeto](./Cursos/Java-Padroes-de-Projeto/README.md)
--  7 ) [Arduíno - LAB na Digital Innovation One](./Cursos/Arduino-Projeto-DIO/README.md)
--  7 ) [Artigos](./Cursos/Artigos/)
--  8 ) [Certificações](./Cursos/Certificados/)
+-  6 ) [Banco de Dados](./Cursos/Banco-de-Dados/README.md)
+-  7 ) [Projeto de Programas - Padrões de Projeto](./Cursos/Java-Padroes-de-Projeto/README.md)
+-  8 ) [Arduíno - LAB na Digital Innovation One](./Cursos/Arduino-Projeto-DIO/README.md)
+-  9 ) [Artigos](./Cursos/Artigos/)
+-  10) [Certificações](./Cursos/Certificados/)
 
 ### Conclusão : No dia 3.07.2022 solicitei o desligamento do projeto Academia STEM faltando alguns meses para a apresentação no ASAC do projeto de pesquisa e desenvolvimento tecnológico sobre o ProAut.

@@ -73,18 +73,18 @@ CREATE TABLE IF NOT EXISTS Pedido(
 --- Criando o restante das tabelas
 
 CREATE TABLE IF NOT EXISTS Restaurante(
-	 cod char(5) NOT NULL
-	,nome varchar(120)
-	,qtd_estrelas int
-	,telefone char(9)
-	,estado varchar(60)
-	,cidade varchar(60)
-	,cep char(8)
-	,rua varchar(60)
-	,numero int
-	,bairro varchar(60)
-	,complemento varchar(120)
-	,gerente_cod char(5) -- antigo funcionario_cod
+	 cod                 char(5) NOT NULL
+	,nome                varchar(120)
+	,qtd_estrelas        int
+	,telefone            char(9)
+	,estado              varchar(60)
+	,cidade              varchar(60)
+	,cep                 char(8)
+	,rua                 varchar(60)
+	,numero              int
+	,bairro              varchar(60)
+	,complemento         varchar(120)
+	,gerente_cod         char(5) -- antigo funcionario_cod
 	,gerente_data_inicio date
 	,CONSTRAINT pk_rest PRIMARY KEY (cod)
 	,CONSTRAINT fk_func_rest FOREIGN KEY (gerente_cod)
@@ -94,11 +94,11 @@ CREATE TABLE IF NOT EXISTS Restaurante(
 );
 
 CREATE TABLE IF NOT EXISTS ContaRedeSocial(
-	 cod char(5) NOT NULL
-	,login varchar(60) NOT NULL
-	,senha varchar(20) NOT NULL
-	,email VARCHAR(60) NOT NULL
-	,site VARCHAR(60)
+	 cod             char(5) NOT NULL
+	,login           varchar(60) NOT NULL
+	,senha           varchar(20) NOT NULL
+	,email           VARCHAR(60) NOT NULL
+	,site            VARCHAR(60)
 	,restaurante_cod char(5) NOT NULL
 	,CONSTRAINT pk_conta PRIMARY KEY (cod)
 	,CONSTRAINT fk_rest_conta
@@ -107,7 +107,7 @@ CREATE TABLE IF NOT EXISTS ContaRedeSocial(
 );
 
 CREATE TABLE IF NOT EXISTS Refeicao(
-	 refeicao varchar(20) NOT NULL
+	 refeicao        varchar(20) NOT NULL
 	,restaurante_cod char(5) NOT NULL
 	,CONSTRAINT pk_ref PRIMARY KEY (refeicao,restaurante_cod)
 	,CONSTRAINT fk_rest_ref FOREIGN KEY (restaurante_cod)
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS 	FtrabalhaR(
 
 CREATE TABLE IF NOT EXISTS RtemH(
 	 restaurante_cod char(5) NOT NULL
-	,horario_cod char(5) NOT NULL
+	,horario_cod     char(5) NOT NULL
 	,CONSTRAINT pk_tem PRIMARY KEY (restaurante_cod,horario_cod)
 	,CONSTRAINT fk_rest_tem 
 		FOREIGN KEY (restaurante_cod)
@@ -140,11 +140,11 @@ CREATE TABLE IF NOT EXISTS RtemH(
 );
 
 CREATE TABLE IF NOT EXISTS Moto(
-	 placa char(7) NOT NULL
-	,marca varchar(60) NOT NULL
-	,modelo varchar(60) NOT NULL
+	 placa       char(7) NOT NULL
+	,marca       varchar(60) NOT NULL
+	,modelo      varchar(60) NOT NULL
 	,cilindradas int NOT NULL
-	,cor varchar(20) NOT NULL
+	,cor         varchar(20) NOT NULL
 	,motoboy_cod char(5) NOT NULL
 	,motoboy_cnh CHAR(9)     NOT NULL
 	,CONSTRAINT pk_moto PRIMARY KEY (placa)
@@ -155,9 +155,9 @@ CREATE TABLE IF NOT EXISTS Moto(
 
 CREATE TABLE IF NOT EXISTS Realiza(
 	 restaurante_cod char(5) NOT NULL
-	,pedido_cod char(5) NOT NULL
-	,cliente_cod char(5) NOT NULL
-	,data_oc timestamp -- entrada correta : TIMESTAMP '2004-10-19 10:23:54'
+	,pedido_cod      char(5) NOT NULL
+	,cliente_cod     char(5) NOT NULL
+	,data_oc         timestamp -- entrada correta : TIMESTAMP '2004-10-19 10:23:54'
 	,CONSTRAINT pk_realiza 
 		PRIMARY KEY (restaurante_cod,pedido_cod,cliente_cod)
 	,CONSTRAINT fk_rest_realiza
@@ -173,27 +173,27 @@ CREATE TABLE IF NOT EXISTS Realiza(
 
 
 CREATE TABLE IF NOT EXISTS Serve(
-	 cliente_cod char(5) NOT NULL
-	,pedido_cod char(5) NOT NULL
+	 cliente_cod     char(5) NOT NULL
+	,pedido_cod      char(5) NOT NULL
 	,funcionario_cod char(5) NOT NULL
 	,CONSTRAINT pk_serve PRIMARY KEY (cliente_cod,pedido_cod,funcionario_cod)
 	,CONSTRAINT fk_clt_serve 
-	 FOREIGN KEY (cliente_cod)
-	 REFERENCES cliente(cod)
+		FOREIGN KEY (cliente_cod)
+		REFERENCES cliente(cod)
 	,CONSTRAINT fk_ped_serve
-	 FOREIGN KEY (pedido_cod)
-	 REFERENCES pedido(cod)
+		FOREIGN KEY (pedido_cod)
+		REFERENCES pedido(cod)
 	,CONSTRAINT fk_func_serve
-	 FOREIGN KEY (funcionario_cod)
-	 REFERENCES funcionario(cod)
+		FOREIGN KEY (funcionario_cod)
+		REFERENCES funcionario(cod)
 );
 
 CREATE TABLE IF NOT EXISTS Entrega(
 	 motoboy_cod char(5) NOT NULL
 	,motoboy_cnh CHAR(9) NOT NULL
-	,pedido_cod char(5) NOT NULL
+	,pedido_cod  char(5) NOT NULL
 	,cliente_cod char(5) NOT NULL
-	,data_ent timestamp
+	,data_ent    timestamp
 	,CONSTRAINT pk_entrega 
 		PRIMARY KEY (motoboy_cod,pedido_cod,cliente_cod)
 	,CONSTRAINT fk_mboy_entrega
@@ -206,6 +206,3 @@ CREATE TABLE IF NOT EXISTS Entrega(
 		FOREIGN KEY (cliente_cod)
 		REFERENCES cliente(cod)
 );
-
-
-

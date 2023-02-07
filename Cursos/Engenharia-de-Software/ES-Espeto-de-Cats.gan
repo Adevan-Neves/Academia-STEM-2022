@@ -72,7 +72,7 @@
             </task>
             <task id="15" uid="06222b01d8aa4ec5a3e733c187ca9925" name="Fazer Diagrama de Classes" meeting="false" start="2023-01-25" duration="4" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
             <task id="19" uid="995fab3019b04cef8931576fe530fb1c" name="Diagrama de Atividades" meeting="false" start="2023-01-31" duration="3" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
-            <task id="33" uid="0e0dda9fd79c420bb4ef8320c204e33b" name="Diagrama de Estados" meeting="false" start="2023-01-31" duration="1" complete="0" expand="true"/>
+            <task id="33" uid="0e0dda9fd79c420bb4ef8320c204e33b" name="Diagrama de Estados" meeting="false" start="2023-01-31" duration="1" complete="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
         </task>
         <task id="16" uid="abf75083c57446969de2543621d6ee09" name="ETAPA 03 - Projeto" color="#ff66ff" meeting="false" start="2023-02-03" duration="5" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
             <depend id="21" type="2" difference="0" hardness="Strong"/>

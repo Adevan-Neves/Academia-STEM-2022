@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-01-31" view-index="0" gantt-divider-location="395" resource-divider-location="300" version="3.3.3292" locale="pt_BR">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-01-31" view-index="0" gantt-divider-location="371" resource-divider-location="300" version="3.3.3292" locale="pt_BR">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="301" order="0"/>
+        <field id="tpd3" name="Nome" width="269" order="0"/>
         <field id="tpd4" name="Data inicial" width="20" order="1"/>
-        <field id="tpd5" name="Data final" width="73" order="2"/>
+        <field id="tpd5" name="Data final" width="66" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
@@ -38,7 +38,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="980f8533a71b492eb209692aab73f911" name="ETAPA 01 - Levantamento de Requisitos" color="#ff9999" meeting="false" start="2023-01-03" duration="9" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
+        <task id="0" uid="980f8533a71b492eb209692aab73f911" name="ETAPA 01 - Levantamento de Requisitos" color="#ff9999" meeting="false" start="2023-01-03" duration="9" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
             <depend id="4" type="2" difference="0" hardness="Strong"/>
             <task id="1" uid="7ee2197360aa49beb64c41355085fffa" name="Entrevista com stakeholders" meeting="false" start="2023-01-03" duration="3" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" priority="4" expand="true" cost-manual-value="0" cost-calculated="false">
                 <depend id="2" type="2" difference="0" hardness="Strong"/>
@@ -48,7 +48,7 @@
             </task>
             <task id="3" uid="9e7df1e6ce104b958890c0b9453268e6" name="Documento de requisitos" meeting="false" start="2023-01-09" duration="5" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
         </task>
-        <task id="4" uid="4e61684e8c13488496054d801d037c7b" name="ETAPA 02 - Análise de requisitos" color="#33ccff" meeting="false" start="2023-01-16" duration="14" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
+        <task id="4" uid="4e61684e8c13488496054d801d037c7b" name="ETAPA 02 - Análise de requisitos" color="#33ccff" meeting="false" start="2023-01-16" duration="14" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
             <depend id="16" type="2" difference="0" hardness="Strong"/>
             <task id="14" uid="0c3c454390df449180aebd2124f05432" name="Fazer UC" meeting="false" start="2023-01-16" duration="3" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
@@ -74,13 +74,13 @@
             <task id="19" uid="995fab3019b04cef8931576fe530fb1c" name="Diagrama de Atividades" meeting="false" start="2023-01-31" duration="3" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
             <task id="33" uid="0e0dda9fd79c420bb4ef8320c204e33b" name="Diagrama de Estados" meeting="false" start="2023-01-31" duration="1" complete="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
         </task>
-        <task id="16" uid="abf75083c57446969de2543621d6ee09" name="ETAPA 03 - Projeto" color="#ff66ff" meeting="false" start="2023-02-03" duration="5" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
+        <task id="16" uid="abf75083c57446969de2543621d6ee09" name="ETAPA 03 - Projeto" color="#ff66ff" meeting="false" start="2023-02-03" duration="5" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
             <depend id="21" type="2" difference="0" hardness="Strong"/>
             <task id="17" uid="dafe71f0e426449b9800e44a48038be8" name="Planejar arquitetura" meeting="false" start="2023-02-03" duration="2" complete="0" thirdDate="2023-01-31" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
             <task id="18" uid="adde8e6d89c34a81879aa106aafe7a09" name="Modelagem de Banco de Dados" meeting="false" start="2023-02-03" duration="5" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
             <task id="20" uid="81fe2b00f53145f499d5b181b36f089d" name="Diagrama de sequência" meeting="false" start="2023-02-03" duration="5" complete="0" thirdDate="2023-01-31" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
         </task>
-        <task id="21" uid="d391550e3711405086d0b2c0b1967802" name="ETAPA 04 - Implementação" color="#99ff99" meeting="false" start="2023-02-10" duration="13" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
+        <task id="21" uid="d391550e3711405086d0b2c0b1967802" name="ETAPA 04 - Implementação" color="#99ff99" meeting="false" start="2023-02-10" duration="13" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
             <depend id="27" type="2" difference="0" hardness="Strong"/>
             <task id="22" uid="aaf188a1414c4d5c849741ede37c722f" name="Fazer projeto base na IDE" meeting="false" start="2023-02-10" duration="6" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
                 <depend id="23" type="2" difference="0" hardness="Strong"/>
@@ -94,12 +94,12 @@
             </task>
             <task id="26" uid="73cf3fdf4d694de69c6fe56e6e137e43" name="Integração com o Banco de Dados" meeting="false" start="2023-02-27" duration="2" complete="0" thirdDate="2022-12-29" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
         </task>
-        <task id="27" uid="8cc57e7b590e4cfe96ceecc8d87a81fc" name="ETAPA 05 - Testes" color="#6666ff" meeting="false" start="2023-03-01" duration="3" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
+        <task id="27" uid="8cc57e7b590e4cfe96ceecc8d87a81fc" name="ETAPA 05 - Testes" color="#6666ff" meeting="false" start="2023-03-01" duration="3" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
             <depend id="30" type="2" difference="0" hardness="Strong"/>
             <task id="28" uid="3595c68adcf3447bae9b8c899270c3af" name="Teste de aceitação" meeting="false" start="2023-03-01" duration="2" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
             <task id="29" uid="6dc59f86a417454a909e4f5b659bf392" name="Teste de interface" meeting="false" start="2023-03-01" duration="3" complete="0" thirdDate="2023-01-16" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
         </task>
-        <task id="30" uid="64f3c9cc5024472896bf4b08d36c0be9" name="ETAPA 06 - Implantação" color="#66ccff" meeting="false" start="2023-03-06" duration="1" complete="0" thirdDate="2023-02-10" thirdDate-constraint="0" expand="false" cost-manual-value="0" cost-calculated="false">
+        <task id="30" uid="64f3c9cc5024472896bf4b08d36c0be9" name="ETAPA 06 - Implantação" color="#66ccff" meeting="false" start="2023-03-06" duration="1" complete="0" thirdDate="2023-02-10" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
             <task id="31" uid="861c31c9afa44e79b16ff880cab0ac18" name="Publicar na Apple Store" meeting="false" start="2023-03-06" duration="1" complete="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
             <task id="32" uid="1c21845ac3a249148e918f44c6025832" name="Publicar na Play Store" meeting="false" start="2023-03-06" duration="1" complete="0" expand="true" cost-manual-value="0" cost-calculated="false"/>
         </task>

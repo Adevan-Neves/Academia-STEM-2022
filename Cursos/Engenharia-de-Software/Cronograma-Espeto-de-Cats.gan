@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2023-03-20" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3292" locale="pt_BR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="200" order="0"/>
+        <field id="tpd4" name="Data inicial" width="75" order="1"/>
+        <field id="tpd5" name="Data final" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#66ccff #6666ff #99ff99 #ff66ff #33ccff #ff9999 #00cc33 #ccccff #9999ff #ff9966]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Função" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="a56fa9e9fbaf4bd195062d4860ca3c14" name="ETAPA 01 - Levantamento de requisitos" meeting="false" start="2023-01-05" duration="8" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false" cost-manual-value="0" cost-calculated="false">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <task id="1" uid="1a1cdec02ef04744ba50173b29810b67" name="Entrevista com stakeholders" meeting="false" start="2023-01-05" duration="2" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" uid="ef2af05c98c7482fbb4b6ff45fd4f180" name="Pesquisa de mercado" meeting="false" start="2023-01-09" duration="2" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" uid="0bccbb59b89745ef8a98149a31d1e933" name="Documento de requisitos" meeting="false" start="2023-01-11" duration="4" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        </task>
+        <task id="4" uid="691675d39fe546b6842d7c956c0ceca8" name="ETAPA 02 - Análise de requisitos" meeting="false" start="2023-01-17" duration="7" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <task id="5" uid="8a53d0e650464d94ab2ad2341e7693a4" name="Fazer UC" meeting="false" start="2023-01-17" duration="2" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" uid="e2a052c1e95e412cb64fd654e0f569c0" name="Fazer VCPs" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+                <task id="7" uid="0e6f81724eac4932beb96a1f1b622c82" name="RF-01-Efetuar Login" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="8" uid="b8993f4ce0f842dd80be5b0168532ef4" name="RF-02-Pesquisar Menu" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="9" uid="a425ec54c80a4dd09453b0cc8abe4856" name="RF-03-Fazer pedido" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="10" uid="adcf39c945c0472faa30e7fb3ac61400" name="RF-04-Receber por delivery" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="11" uid="2656e34ca26c4c58be6b2c171bb26279" name="RF-05-Fazer pagamento" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="12" uid="20e3d6a0f33c4945a3ef7dc549b17675" name="RF-06-Retirar no restaurante" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="13" uid="2da70ea4bb5940609b55535d093b9605" name="RF-07-Fazer reserva" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="14" uid="1645cdd3d32c45f8b1b7bde8f75aaee3" name="RF-08-Visualizar fluxo de caixa" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+                <task id="15" uid="31a7394aa09649fd9ac7ddef0b426028" name="RF-09-Fazer cadastro de usuário" meeting="false" start="2023-01-19" duration="1" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+            </task>
+            <task id="16" uid="9f7094a3806247c6997c0f22182f3c57" name="Diagrama de Classes" meeting="false" start="2023-01-20" duration="4" complete="0" thirdDate="2023-02-22" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+            <task id="17" uid="51a0cb1f5781473880cd3613c4617781" name="Diagrama de Atividades" meeting="false" start="2023-01-17" duration="3" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+            <task id="18" uid="41825e51e90342e68048d428f460031b" name="Diagrama de estados" meeting="false" start="2023-01-17" duration="2" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        </task>
+        <task id="20" uid="55a1f738885940858c6e6323be988df6" name="ETAPA 03 - Projeto" meeting="false" start="2023-01-26" duration="5" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false" cost-manual-value="0" cost-calculated="false">
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+            <task id="21" uid="eabf396f1b084fffb826cb24ec6f1103" name="Arquitetura : Definição" meeting="false" start="2023-01-26" duration="4" complete="0" thirdDate="2023-03-06" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+            <task id="22" uid="1da4a97c60a34f368f9ced027fbe248c" name="Modelagem de Banco de Dados" meeting="false" start="2023-01-26" duration="5" complete="0" thirdDate="2023-03-06" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+            <task id="23" uid="33d46a4689c147478958945062a29862" name="Diagrama de seguência" meeting="false" start="2023-01-26" duration="3" complete="0" thirdDate="2023-03-06" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        </task>
+        <task id="25" uid="7d03b69ad8064a729b16639b9b9f35b0" name="ETAPA 04 - Implementação" meeting="false" start="2023-02-02" duration="22" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false" cost-manual-value="0.0" cost-calculated="false">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+            <task id="26" uid="103cf043be43433aace7eb5abc4773d7" name="IDE : Configuração e inicio de estrututura" meeting="false" start="2023-02-02" duration="4" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" uid="4f82c07634c84bcaae109b2a698c0e44" name="Construir os módulos (arquitetura MVVM)" meeting="false" start="2023-02-08" duration="7" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" uid="59cd4456b4a2480b994c77e6fc8d6443" name="Implementação de casos de uso e banco de dados" meeting="false" start="2023-02-17" duration="8" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="37" uid="1b53d67ebe7c495d86bca15cd18fe48d" name="acessar API e Banco de Dados" meeting="false" start="2023-03-01" duration="3" complete="0" thirdDate="2023-02-02" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="31" uid="5da99570ab084a4a9dbb65da7cfc3517" name="ETAPA  05 - Testes" meeting="false" start="2023-03-06" duration="6" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+            <task id="32" uid="cdddc2c8046046799187a2f280189891" name="Teste automatizado de interface" meeting="false" start="2023-03-06" duration="3" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" uid="d216699911334a628e33e1d7b5bd2db3" name="Teste de aceitação" meeting="false" start="2023-03-09" duration="3" complete="0" thirdDate="2023-05-12" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        </task>
+        <task id="34" uid="97387bb866674fb0ba364f8757ef8833" name="ETAPA 06 - Implantação" meeting="false" start="2023-03-14" duration="1" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="true" cost-manual-value="0" cost-calculated="false">
+            <task id="35" uid="c81a1e68303f48209c0f8807aaa512cd" name="Publicar na Apple Store" meeting="false" start="2023-03-14" duration="1" complete="0" thirdDate="2023-05-15" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+            <task id="36" uid="7b23fd52c0d64f19bbe4cb3770721757" name="Publicar na PLay Store" meeting="false" start="2023-03-14" duration="1" complete="0" thirdDate="2023-05-15" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

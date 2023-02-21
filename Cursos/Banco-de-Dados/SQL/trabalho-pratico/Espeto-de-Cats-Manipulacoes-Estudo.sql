@@ -40,8 +40,8 @@ INSERT INTO restaurante(cod,nome,
 						gerente_data_inicio) 
 VALUES ('15154','Espeto de Cats - Filial SC',3,'11111','2021-05-10');
 
--- Na tabela funcionários tem dois funcionários com o mesmo nome
--- Quero alterar isso
+-- Na tabela funcionários tem dois funcionários 
+-- Quero alterar isso com o mesmo nome 
 
 -- UPDATE nome_tabela
 -- SET CAMPO = "novo_valor"
@@ -50,6 +50,83 @@ VALUES ('15154','Espeto de Cats - Filial SC',3,'11111','2021-05-10');
 UPDATE funcionario
 SET nome = 'Francisco Bernades'
 WHERE cod = '22222';
+
+
+-- Mostre o nome e o cargo de funcionário
+
+SELECT nome || ' é  um ' || cargo  AS Nome_Cargo FROM funcionario;
+SELECT concat(nome,' é um ',cargo) AS nome_cargo FROM funcionario; 
+
+-- Mostre todos os dados de todos os clientes cujo
+-- nome começa com C
+
+-- Like compara diferenciando o 
+-- maiusculo de minusculo
+SELECT * FROM cliente
+WHERE upper(nome) LIKE upper('C%');
+
+-- ILIKE realiza a comparação ignorando se ela está
+-- em maiúscula ou minúscula
+SELECT * FROM cliente
+WHERE nome ILIKE 'c%';
+
+-- Mostre os funcionários que são garçom e atendente
+
+SELECT * FROM funcionario
+WHERE cargo IN ('Garçom','Atendente') 
+ORDER BY cod DESC;
+
+-- Mostre todos os clientes cuja segunda 
+-- letra do nome é a letra a
+
+SELECT * FROM cliente
+WHERE nome LIKE '_a%';
+
+-- Some mais 10 ao número do endereço de funcionário 
+
+SELECT nome, numero , numero + 10 AS num_10
+FROM funcionario;
+
+-- Mostra o nome e o cód do cliente que não 
+-- possui pontos de fidelidade nula
+SELECT cod,nome,pontos_fidelidade 
+FROM cliente 
+WHERE pontos_fidelidade IS NOT NULL;
+
+-- mostre o cod e a senha das contas de 
+-- rede social com ordenação pelo e-mail
+
+SELECT cod,email, login 
+FROM contaredesocial ORDER BY email DESC;
+
+-- Mostre o modelo, a marca e a placa das motos,
+-- assim como o nome dos seus respectivos donos
+
+SELECT m.modelo, m.marca , f.nome nome_dono
+FROM   moto m , motoboy mt, funcionario f 
+WHERE  m.motoboy_cod = mt.cod AND m.motoboy_cod = f.cod;
+
+-- Para fazer a junção externa irei propositalmente colocar 
+-- um valor de chave estrangeira que seja nulo
+-- (Adicionar moto sem dono)
+
+
+INSERT INTO 
+	moto(cilindradas,placa,marca,modelo,cor) 
+VALUES (37,'7878784','Suzuki','APF-2023','Vermelho');
+
+-- Agrupe pela quantidade de estrelas do restaurante
+-- """""Todas as colunas na lista SELECT que não estejam 
+-- em funções de grupo devem estar na cláusula GROUP BY"""""
+SELECT qtd_estrelas ,count(*) qtd_restaurantes
+FROM restaurante 
+GROUP BY qtd_estrelas;
+
+-- Use a clásula HAVING depois do GROUP BY para restrigir grupos
+SELECT qtd_estrelas ,count(*) qtd_restaurantes
+FROM restaurante 
+GROUP BY qtd_estrelas, cod
+HAVING cod > '15152';
 
 SELECT * FROM cliente;
 SELECT * FROM contaredesocial;

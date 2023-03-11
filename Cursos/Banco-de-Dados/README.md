@@ -12,7 +12,7 @@
 
 ![Alter image](./Imagens/Schema-Espeto-de-Cats.png)
 
-### Tabela Restaurante: Valores dentro do schema no Banco de Dados Postgresql.
+### Tabela Restaurante: Valores dentro do schema do SGBD Postgresql.
 
 ![Alter text](./Imagens/Postgresql.png)
 

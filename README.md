@@ -13,6 +13,6 @@
 -  7 ) [Projeto de Programas - Padrões de Projeto](./Cursos/Java-Padroes-de-Projeto/README.md)
 -  8 ) [Arduíno - LAB na Digital Innovation One](./Cursos/Arduino-Projeto-DIO/README.md)
 -  9 ) [Artigos](./Cursos/Artigos/)
--  10) [Certificações](./Cursos/Certificados/)
+-  10)[Certificações](./Cursos/Certificados/)
 
 ### Conclusão : No dia 3.07.2022 solicitei o desligamento do projeto Academia STEM faltando alguns meses para a apresentação no ASAC do projeto de pesquisa e desenvolvimento tecnológico sobre o ProAut.
